@@ -1,6 +1,9 @@
 # kakaoEmbed
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-bule.svg)](https://opensource.org/licenses/MIT)
+[![npm: version](https://img.shields.io/npm/v/kakaoembed?style=flat-square)](https://www.npmjs.com/package/kakaoembed)
+[![github: star](https://img.shields.io/github/stars/jaewon4492/kakaoEmbed?style=flat-square)](https://github.com/jaewon4492/kakaoEmbed)
+[![nodejs: version](https://img.shields.io/node/v/kakaoembed?style=flat-square)](https://www.npmjs.com/package/kakaoembed)
 
 > 카카오 i 오픈빌더에 사용하는 스킬서버에서 SkillResponse 작성을 도와주는 Node.js 모듈입니다.
 
