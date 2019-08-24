@@ -199,10 +199,12 @@ data.ouput() 출력값
           "items": [
             {
               "title": "Kakao i Developers",
+              "description": "새로운 AI의 내일과 일상의 변화",
               "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg"
             },
             {
               "title": "Kakao i Voice Service",
+              "description": "보이스봇 / KVS 제휴 신청하기",
               "imageUrl": "http://k.kakaocdn.net/dn/bE8AKO/btqqFHI6vDQ/mWZGNbLIOlTv3oVF1gzXKK/1x1.jpg"
             }
           ],
@@ -218,7 +220,7 @@ data.ouput() 출력값
 */
 // res.status(200).send(data.output());  express 사용시
 ```
-![image](https://user-images.githubusercontent.com/32125218/63636886-71f5f900-c6b0-11e9-979b-21641f7867a6.png)
+![image](https://user-images.githubusercontent.com/32125218/63637799-087be780-c6bc-11e9-9af0-c4f4a667cb09.png)
 ## 케로셀 Carousel
 😢 아쉽게도 Carousel은 kakaoEmbed에서 지원하고 있지 않습니다. 나중에 기회가 생기면 지원하겠습니다.
 ```javascript
