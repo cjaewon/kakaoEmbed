@@ -219,4 +219,186 @@ data.ouput() 출력값
 // res.status(200).send(data.output());  express 사용시
 ```
 ![image](https://user-images.githubusercontent.com/32125218/63636886-71f5f900-c6b0-11e9-979b-21641f7867a6.png)
+## 케로셀 Carousel
+😢 아쉽게도 Carousel은 kakaoEmbed에서 지원하고 있지 않습니다. 나중에 기회가 생기면 지원하겠습니다.
+```javascript
+let data = new kakaoEmbed();
+data
+.addCarousel({
+      "type": "basicCard",
+      "items": [
+        {
+          "title": "보물상자",
+          "description": "보물상자 안에는 뭐가 있을까",
+          "thumbnail": {
+            "imageUrl": "http://k.kakaocdn.net/dn/83BvP/bl20duRC1Q1/lj3JUcmrzC53YIjNDkqbWK/i_6piz1p.jpg"
+          },
+          "buttons": [
+            {
+              "action": "message",
+              "label": "열어보기",
+              "messageText": "짜잔! 우리가 찾던 보물입니다"
+            },
+            {
+              "action":  "webLink",
+              "label": "구경하기",
+              "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+            }
+          ]
+        },
+        {
+          "title": "보물상자2",
+          "description": "보물상자2 안에는 뭐가 있을까",
+          "thumbnail": {
+            "imageUrl": "http://k.kakaocdn.net/dn/83BvP/bl20duRC1Q1/lj3JUcmrzC53YIjNDkqbWK/i_6piz1p.jpg"
+          },
+          "buttons": [
+            {
+              "action": "message",
+              "label": "열어보기",
+              "messageText": "짜잔! 우리가 찾던 보물입니다"
+            },
+            {
+              "action":  "webLink",
+              "label": "구경하기",
+              "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+            }
+          ]
+        },
+        {
+          "title": "보물상자3",
+          "description": "보물상자3 안에는 뭐가 있을까",
+          "thumbnail": {
+            "imageUrl": "http://k.kakaocdn.net/dn/83BvP/bl20duRC1Q1/lj3JUcmrzC53YIjNDkqbWK/i_6piz1p.jpg"
+          },
+          "buttons": [
+            {
+              "action": "message",
+              "label": "열어보기",
+              "messageText": "짜잔! 우리가 찾던 보물입니다"
+            },
+            {
+              "action":  "webLink",
+              "label": "구경하기",
+              "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+            }
+        ]}
+    ]}
+)
 
+/*
+data.ouput() 출력값
+{
+  "version": "2.0",
+  "template": {
+    "outputs": [
+      {
+        "carousel": {
+          "type": "basicCard",
+          "items": [
+            {
+              "title": "보물상자",
+              "description": "보물상자 안에는 뭐가 있을까",
+              "thumbnail": {
+                "imageUrl": "http://k.kakaocdn.net/dn/83BvP/bl20duRC1Q1/lj3JUcmrzC53YIjNDkqbWK/i_6piz1p.jpg"
+              },
+              "buttons": [
+                {
+                  "action": "message",
+                  "label": "열어보기",
+                  "messageText": "짜잔! 우리가 찾던 보물입니다"
+                },
+                {
+                  "action": "webLink",
+                  "label": "구경하기",
+                  "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+                }
+              ]
+            },
+            {
+              "title": "보물상자2",
+              "description": "보물상자2 안에는 뭐가 있을까",
+              "thumbnail": {
+                "imageUrl": "http://k.kakaocdn.net/dn/83BvP/bl20duRC1Q1/lj3JUcmrzC53YIjNDkqbWK/i_6piz1p.jpg"
+              },
+              "buttons": [
+                {
+                  "action": "message",
+                  "label": "열어보기",
+                  "messageText": "짜잔! 우리가 찾던 보물입니다"
+                },
+                {
+                  "action": "webLink",
+                  "label": "구경하기",
+                  "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+                }
+              ]
+            },
+            {
+              "title": "보물상자3",
+              "description": "보물상자3 안에는 뭐가 있을까",
+              "thumbnail": {
+                "imageUrl": "http://k.kakaocdn.net/dn/83BvP/bl20duRC1Q1/lj3JUcmrzC53YIjNDkqbWK/i_6piz1p.jpg"
+              },
+              "buttons": [
+                {
+                  "action": "message",
+                  "label": "열어보기",
+                  "messageText": "짜잔! 우리가 찾던 보물입니다"
+                },
+                {
+                  "action": "webLink",
+                  "label": "구경하기",
+                  "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+*/
+// res.status(200).send(data.output());  express 사용시
+```
+![image](https://user-images.githubusercontent.com/32125218/63636934-3f003500-c6b1-11e9-8da8-353b42494db1.png)
+## 바로응답 QuickReplies
+```javascript
+let data = new kakaoEmbed();
+data
+.addText('메뉴에서 원하는 기능을 선택해주세요')
+.addQuickReplies('날씨', { action: 'message', messageText: '날씨를 알려주세요.' })
+.addQuickReplies('뉴스', { action: 'block', messageText: '뉴스를 알려드릴께요', 'blockId': '블록 아이디' });
+
+/*
+data.ouput() 출력값
+{
+  "version": "2.0",
+  "template": {
+    "outputs": [
+      {
+        "simpleText": {
+          "text": "메뉴에서 원하는 기능을 선택해주세요"
+        }
+      }
+    ],
+    "quickReplies": [
+      {
+        "action": "message",
+        "messageText": "날씨를 알려주세요.",
+        "label": "날씨"
+      },
+      {
+        "action": "block",
+        "messageText": "뉴스를 알려드릴께요",
+        "blockId": "블록 아이디",
+        "label": "뉴스"
+      }
+    ]
+  }
+}
+*/
+// res.status(200).send(data.output());  express 사용시
+```
+![image](https://user-images.githubusercontent.com/32125218/63637013-58ee4780-c6b2-11e9-8f48-09e6ba083cb6.png)
