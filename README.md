@@ -169,4 +169,54 @@ data.ouput() 출력값
 // res.status(200).send(data.output());  express 사용시
 ```
 ![image](https://user-images.githubusercontent.com/32125218/63636784-16773b80-c6af-11e9-86b4-c655f662b4ad.png)
+## 리스트카드 ListCard
+```javascript
+let data = new kakaoEmbed();
+data
+.addListCard()
+.setCardheader('카카오 i 디벨로퍼스를 소개합니다', 'http://k.kakaocdn.net/dn/xsBdT/btqqIzbK4Hc/F39JI8XNVDMP9jPvoVdxl1/2x1.jpg')
+.addCarditem(
+    'Kakao i Developers',
+    '새로운 AI의 내일과 일상의 변화',
+    'http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg',
+    'https://namu.wiki/w/%EB%9D%BC%EC%9D%B4%EC%96%B8(%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%94%84%EB%A0%8C%EC%A6%88)'
+)
+.addCarditem(
+    'Kakao i Voice Service',
+    '보이스봇 / KVS 제휴 신청하기',
+    'http://k.kakaocdn.net/dn/bE8AKO/btqqFHI6vDQ/mWZGNbLIOlTv3oVF1gzXKK/1x1.jpg',
+    'https://namu.wiki/w/%EC%96%B4%ED%94%BC%EC%B9%98'
+)
+
+/*
+data.ouput() 출력값
+{
+  "version": "2.0",
+  "template": {
+    "outputs": [
+      {
+        "listCard": {
+          "items": [
+            {
+              "title": "Kakao i Developers",
+              "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg"
+            },
+            {
+              "title": "Kakao i Voice Service",
+              "imageUrl": "http://k.kakaocdn.net/dn/bE8AKO/btqqFHI6vDQ/mWZGNbLIOlTv3oVF1gzXKK/1x1.jpg"
+            }
+          ],
+          "header": {
+            "title": "카카오 i 디벨로퍼스를 소개합니다",
+            "imageUrl": "http://k.kakaocdn.net/dn/xsBdT/btqqIzbK4Hc/F39JI8XNVDMP9jPvoVdxl1/2x1.jpg"
+          }
+        }
+      }
+    ]
+  }
+}
+*/
+// res.status(200).send(data.output());  express 사용시
+```
+![image](https://user-images.githubusercontent.com/32125218/63636886-71f5f900-c6b0-11e9-979b-21641f7867a6.png)
 
