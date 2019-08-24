@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-bule.svg)](https://opensource.org/licenses/MIT)
 
-> 카카오 i 오픈빌더 스킬에서 응답 타입별 포맷 작성을 도와주는 Node.js 모듈입니다.
+> 카카오 i 오픈빌더에 사용하는 스킬서버에서 응답 타입별 포맷 작성을 도와주는 Node.js 모듈입니다.
 
 ## ❓ Why <사용 이유>
 
