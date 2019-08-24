@@ -1,0 +1,26 @@
+{
+  "name": "kakaoembed",
+  "version": "1.0.1",
+  "main": "./lib/kakaoEmbed.js",
+  "author": "jwn <usbjewon@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 7.0.0"
+  },
+  "keywords": [
+    "kakaoembed",
+    "kakao i openbuilder",
+    "kakao",
+    "kakao json",
+    "skill json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaewon4492/kakaoEmbed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaewon4492/kakaoEmbed/issues"
+  },
+  "homepage": "https://github.com/jaewon4492/kakaoEmbed#readme",
+  "description": "skill server json format helper"
+}
