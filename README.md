@@ -8,6 +8,13 @@
 kakaoEmbed를 사용하면 간단하게 응답 JSON 포맷을 만들 수 있습니다.
 
 ## ⬇️ Installation <설치 방법>
+
 ```bash
 npm install kakaoEmbed
+```
+
+## 📄 Example <예제>
+
+```javascript
+
 ```
