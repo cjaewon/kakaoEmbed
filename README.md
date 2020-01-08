@@ -6,6 +6,7 @@
 [![nodejs: version](https://img.shields.io/node/v/kakaoembed?style=flat-square)](https://www.npmjs.com/package/kakaoembed)
 
 > 카카오 i 오픈빌더에 사용하는 스킬서버에서 SkillResponse 작성을 도와주는 Node.js 모듈입니다.
++ kakaoEmbed 의 문법을 더 효과적으로 바꾸어 보고 싶습니다. Issue로 문법을 어떻게 바꾸면 좋을지 알려주세요!
 
 ## ❓ Why <사용 이유>
 
